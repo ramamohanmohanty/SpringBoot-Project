@@ -1,0 +1,7 @@
+employee:
+  name: ram
+  salary: 20000.00
+  address:
+    city: bbsr
+    state: odisha
+
