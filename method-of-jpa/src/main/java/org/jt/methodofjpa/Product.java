@@ -12,22 +12,22 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
-@Data
+@NoArgsConstructor
 @Builder
+@Data
 @Entity
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private  String productId;
-    private  String productName;
-    private  String productBrand;
-    private  Double productPrice;
+    private String productId;
+    private String productName;
+    private String productBrand;
+    private double productPrice;
     @CreationTimestamp
-    private LocalDateTime createdDate;
+    private LocalDateTime createdData;
     @UpdateTimestamp
-    private LocalDateTime updatedDate;
-    
-
+    private LocalDateTime updatedData;
 }
